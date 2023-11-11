@@ -27,3 +27,9 @@ current_year = datetime.date.today().year
 korean_year=current_year - int(year) + 1
 print(korean_year)
 #성별을 구한다.
+if joomin[7] == '1' or joomin[7] == '3' : 
+    sex="남성"
+elif joomin[7] == '2' or joomin[7] == '4' :
+    sex="여성"
+
+print (f'당신의 성별은 {sex} 입니다.')
