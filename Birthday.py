@@ -11,6 +11,12 @@ if joomin[7] == "1" or joomin[7] =="2" :
 elif joomin[7] == "3" or joomin[7] =="4" :
     year="20"
 print (year + joomin[0:2])
+year=year+joomin[0:2]
 #yyyy-mm-dd 형식
+month=joomin[2:4]
+day=joomin[4:6]
+print(f'{year}-{month}-{day}')
+#print(year + '-' + month + '-' + day)자바식
+
 #한국식 나이를 구한다 (현재 년도 - 태어난 년도 +1)
 #성별을 구한다.
