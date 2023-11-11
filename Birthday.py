@@ -1,3 +1,5 @@
+import datetime
+
 #주민번호 입력받기
 joomin=input("주민번호를 입력하세요")
 #940113-2111111
@@ -17,6 +19,11 @@ month=joomin[2:4]
 day=joomin[4:6]
 print(f'{year}-{month}-{day}')
 #print(year + '-' + month + '-' + day)자바식
-
 #한국식 나이를 구한다 (현재 년도 - 태어난 년도 +1)
+
+# 현재 날짜 구하기 = datetime 을 쓰면 된다
+current_year = datetime.date.today().year
+
+korean_year=current_year - int(year) + 1
+print(korean_year)
 #성별을 구한다.
